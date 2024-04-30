@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doctor's App</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="../css page/appointment.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navigation starts -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">HealthCare</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">HealthCare.</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="appointment.html">Appointment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registration.html">Registration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Log-in.html">Log in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Log-in.html">Log out</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- nevigation ends -->
+
+    <!-- heading starts -->
+    <div class="card text-bg-green">
+        <img src="../images/mask.jpg" class="card-img" alt="...">
+    </div>
+    <!-- heading ends -->
+
+    <!-- card stras -->
+
+    <section>
+        <div class="container-fluid1">
+            <div class="row">
+                <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                    <div class="row pt-md-5 mt-md-3 mb-5">
+                        <div class="col-xl-3 col-sm-6 p-2">
+                            <div class="card card-common">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <i class="fas fa-shopping-cart fa-3x text-info"></i>
+                                        <div class="text-right text-dark">
+                                            <h5>Doctors</h5>
+                                            <h3>50+</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-dark">
+                                    <i class="fas fa-spinner fa-pulse text-info mr-3"></i>
+                                    <span>Updating</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xl-3 col-sm-6 p-2">
+                            <div class="card card-common">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <i class="fas fa-money-bill-alt fa-3x text-success"></i>
+                                        <div class="text-right text-dark">
+                                            <h5>Laboratories</h5>
+                                            <h3>10+</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-dark">
+                                    <i class="fas fa-spinner fa-pulse text-success mr-3"></i>
+                                    <span>Updating</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xl-3 col-sm-6 p-2">
+                            <div class="card card-common">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <i class="fas fa-users fa-3x text-warning"></i>
+                                        <div class="text-right text-dark">
+                                            <h5>Patient</h5>
+                                            <h3>3,000,00+</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-dark">
+                                    <i class="fas fa-spinner fa-pulse text-warning mr-3"></i>
+                                    <span>Updating</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xl-3 col-sm-6 p-2">
+                            <div class="card card-common">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <i class="fas fa-chart-line fa-3x text-danger"></i>
+                                        <div class="text-right text-dark">
+                                            <h5>Locations</h5>
+                                            <h3>13+</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-dark">
+                                    <i class="fas fa-spinner fa-pulse text-danger mr-3"></i>
+                                    <span>Updating</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!---End of Cards-->
+
+    <!--table-->
+    <section>
+        <div class="container-fluid2">
+            <div class="row1 mb-5">
+                <div class="col-xl-11 col-lg-9 col-md-8 ml-auto">
+                    <div class="row align-items-center">
+                        <div class="col-xl-12 col-12 mb-4 mb-xl-0">
+                            <h3 class="text-dark text-center mb-3">
+                                OPD Booking
+                            </h3>
+                            <table class="table table-striped bg-light text-center">
+                                <thead>
+                                    <tr class="text-dark">
+                                        <th>Name</th>
+                                        <th>Tme</th>
+                                        <th>Day</th>
+                                        <th>Fees</th>
+                                        <th>Reason</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Dr.Amitava Dasgupta</th>
+                                        <td>10.00am to 7.00pm</td>
+                                        <td>Monday,Friday</td>
+                                        <td>1200/-</td>
+                                        <td>Cardiology Specialist</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Dr.Simanchal Das</th>
+                                        <td>5.00am to 7.00pm</td>
+                                        <td>Tuesday,Wednesday</td>
+                                        <td>2000/-</td>
+                                        <td>Neurology Specialist</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Dr.Susmita Chowdhury</th>
+                                        <td>6.00pm to 8.00pm</td>
+                                        <td>Friday</td>
+                                        <td>800/-</td>
+                                        <td>Gastrology Specialist</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Dr.Satyaki Das</th>
+                                        <td>3.00pm to 5.00pm</td>
+                                        <td>Monday,Saturday,Sunday</td>
+                                        <td>1500/-</td>
+                                        <td>Nephrologylogy Specialist</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Dr.Sohini Roy</th>
+                                        <td>10.00am to 12.00pm</td>
+                                        <td>Sunday</td>
+                                        <td>1100/-</td>
+                                        <td>Pulmonology Specialist</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Dr.Debabrata Dey</th>
+                                        <td>12.00pm to 4.00pm</td>
+                                        <td>Friday</td>
+                                        <td>900/-</td>
+                                        <td>Orthopaedics Specialist</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Dr.Alam Shah Khan</th>
+                                        <td>4.00pm to 7.00pm</td>
+                                        <td>Monday,Tuesday,Sunday,Wednesday</td>
+                                        <td>1800/-</td>
+                                        <td>Surgeon Specialist</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Dr.Ratri Nayak</th>
+                                        <td>7.00pm to 8.00pm</td>
+                                        <td>Daily</td>
+                                        <td>600/-</td>
+                                        <td>Medicine Specialist</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End of table-->
+
+    <!-- appointment form strats -->
+
+    <h1>BOOK APPOINTMENT</h1>
+    <div class="appointment">
+        <form class="row g-3">
+            <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">First name</label>
+                <input type="text" class="form-control" id="validationDefault01" required>
+            </div>
+            <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="validationDefault02" required>
+            </div>
+            <div class="col-md-4">
+                <label for="validationDefaultUsername" class="form-label">Contact Number</label>
+                <div class="input-group">
+                    <input type="number" class="form-control" id="validationDefaultUsername"
+                        aria-describedby="inputGroupPrepend2" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault03" class="form-label">Email</label>
+                <input type="email" class="form-control" id="validationDefault03" required>
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault04" class="form-label">Appointment for</label>
+                <select class="form-select" id="validationDefault04" required>
+                    <option selected disabled value=""></option>
+                    <option>Cardiology </option>
+                    <option>Neurology</option>
+                    <option>Gastrology</option>
+                    <option>Nephrology</option>
+                    <option>Pulmonology</option>
+                    <option>Orthopedics</option>
+                    <option>General Surgery</option>
+                    <option>Critical Care and Internal Medicine</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault05" class="form-label">Choose yuor Date</label>
+                <input type="date" class="form-control" id="validationDefault05" required>
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault05" class="form-label">Choose your Time</label>
+                <input type="time" class="form-control" id="validationDefault05" required>
+            </div>
+            <div class="col-md-12">
+                <label for="validationDefault05" class="form-label">Mention yuor Issues</label>
+                <textarea class="form-control" id="validationDefault05" required></textarea>
+            </div>
+
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                    <label class="form-check-label" for="invalidCheck2">
+                        Agree to terms and conditions
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Confirm Appointment</button>
+            </div>
+        </form>
+    </div>
+    <!-- appointment form ends -->
+
+    <!-- footer strats here -->
+
+    <footer class="pt-5 pb-4" id="contact">
+        <div class="container5">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                    <h5 class="mb-4 font-weight-bold">ABOUT US</h5>
+                    <ul class="f-address">
+                        <li>
+                            <div class="row">
+                                <div class="col-1"><i class="fas fa-map-marker"></i></div>
+                                <div class="col-10">
+                                    <h6 class="font-weight-bold mb-0">Address:</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-1"><i class="far fa-envelope"></i></div>
+                                <div class="col-10">
+                                    <h6 class="font-weight-bold mb-0">Have any questions?</h6>
+                                    <p><a href="#">Support@userthemes.com</a></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-1"><i class="fas fa-phone-volume"></i></div>
+                                <div class="col-10">
+                                    <h6 class="font-weight-bold mb-0">Address:</h6>
+                                    <p><a href="#">+XX (0) XX XX-XXXX-XXXX</a></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                    <h5 class="mb-4 font-weight-bold">FRESH TWEETS</h5>
+                    <ul class="f-address">
+                        <li>
+                            <div class="row">
+                                <div class="col-1"><i class="fab fa-twitter"></i></div>
+                                <div class="col-10">
+                                    <p class="mb-0"><a href="#">@userthemesrel </a> HTML Version Out Now</p>
+                                    <label>10 Mins Ago</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-1"><i class="fab fa-twitter"></i></div>
+                                <div class="col-10">
+                                    <p class="mb-0"><a href="#">@userthemesrel </a> HTML Version Out Now</p>
+                                    <label>10 Mins Ago</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-1"><i class="fab fa-twitter"></i></div>
+                                <div class="col-10">
+                                    <p class="mb-0"><a href="#">@userthemesrel </a> HTML Version Out Now</p>
+                                    <label>10 Mins Ago</label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                    <h5 class="mb-4 font-weight-bold">LATEST UPDATES</h5>
+                    <ul class="recent-post">
+                        <li>
+                            <label class="mr-3">28 <br><span>APR</span></label>
+                            <span>Rendomised words which dont look eveable.</span>
+                        </li>
+                        <li>
+                            <label class="mr-3">29 <br><span>APR</span></label>
+                            <span>Rendomised words which dont look eveable.</span>
+                        </li>
+                        <li>
+                            <label class="mr-3">30 <br><span>APR</span></label>
+                            <span>Rendomised words which dont look eveable.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                    <h5 class="mb-4 font-weight-bold">CONNECT WITH US</h5>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Your Email Address">
+                        <span class="input-group-addon" id="basic-addon2"><i class="fas fa-check"></i></span>
+                    </div>
+                    <ul class="social-pet mt-4">
+                        <li><a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" title="twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" title="google-plus"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#" title="instagram"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright -->
+    <section class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="text-center text-white">
+                        &copy; 2018 Your Company. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer ends here -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
